@@ -15,8 +15,11 @@
   - role: debops.ifupdown
     ifupdown_interfaces:
 
-    - iface: 'eth0:0'
+    - iface: 'eth0'
       type: interface
       inet: static
-      addresses: '158.69.160.133'
-      netmask: '255.255.255.255'
+      addresses: [ '158.69.120.168', '158.69.160.132/30' ]
+      netmask: '255.255.255.0'
+      network: 158.69.120.0
+      broadcast: 158.69.120.255
+      gateway: 158.69.120.254
