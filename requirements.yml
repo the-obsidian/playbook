@@ -1,2 +1,5 @@
 - src: playlist.java
   path: .ansible
+
+- src: debops.ifupdown
+  path: .ansible

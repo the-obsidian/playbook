@@ -9,5 +9,5 @@ $ sudo su
 $ apt-get update
 $ apt-get -y upgrade
 $ apt-get install -y python-dev python-pip git
-$ pip install ansible
+$ pip install ansible markupsafe
 ```

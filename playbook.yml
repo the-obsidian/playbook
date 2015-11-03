@@ -6,3 +6,17 @@
   - name: debug statement
     debug: >
       msg="It works!"
+
+- hosts: localhost
+  sudo: true
+  connection: local
+
+  roles:
+  - role: debops.ifupdown
+    ifupdown_interfaces:
+
+    - iface: 'eth0:0'
+      type: interface
+      inet: static
+      addresses: '158.69.160.133'
+      netmask: '255.255.255.255'
